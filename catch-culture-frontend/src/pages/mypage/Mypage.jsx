@@ -1,46 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
 import { PiNotificationBold, PiMapPin } from 'react-icons/pi';
 import { AiOutlineDollar, AiOutlineMessage } from 'react-icons/ai';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Mypage.css';
 import Level0 from '../../assets/pointimg/level0.png';
 import Backitem from '../../components/Backitem';
-import axios from '../../api/axios';
+
+let profimg =
+  'https://storage.googleapis.com/elegant-bucket/KakaoTalk_20231109_140116686.jpg';
 
 function Mypage() {
-  const [nick, setNick] = useState('');
-  const [img, setImg] = useState('');
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`/user`);
-        setNick(response.data.nickname);
-        setImg(response.data.storedFileUrl);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
-
-  console.log(nick);
-  console.log(img);
-
   return (
-    <div className="mypageall">
+    <div className="wrap">
       <Backitem />
       <div className="mypage-body">
         <div className="information">
-          <img className="profileimage" src={img}></img>
-          {nick}
-          <div className="twobutton">
+          <div className="profileimg">
+            <img className="profileimage" src={profimg} />
+            <p>nickname</p>
+          </div>
+          <div class="twobutton">
             <NavLink to="/profile-edit">
-              <button className="putprofile">개인정보 수정</button>
+              <button class="putprofile">개인정보 수정</button>
             </NavLink>
             <NavLink to="/login">
-              <button className="logout">로그아웃</button>
+              <button class="logout">로그아웃</button>
             </NavLink>
           </div>
         </div>

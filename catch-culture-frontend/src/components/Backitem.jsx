@@ -12,7 +12,6 @@ const BackNavi = styled.div`
   top: 24px;
   left: 40px;
   cursor: pointer;
-  z-index: 1;
 `;
 
 export default function Backitem() {
