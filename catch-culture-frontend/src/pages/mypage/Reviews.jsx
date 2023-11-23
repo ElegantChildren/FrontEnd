@@ -7,7 +7,7 @@ import './Reviews.css';
 function Reviews() {
   const cnt = 5;
   return (
-    <div className="reviewall">
+    <div className="tota">
       <Backitem />
       <div className="wrap">
         <div className="reviewrow">

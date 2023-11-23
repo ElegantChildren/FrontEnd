@@ -34,7 +34,7 @@ function Mypage() {
             <NavLink to="/notify">
               <button className="notify">
                 <PiNotificationBold size="40" />
-                제보
+                공지
               </button>
             </NavLink>
             <NavLink to="/point-history">
