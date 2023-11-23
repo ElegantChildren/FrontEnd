@@ -107,13 +107,6 @@ function Category() {
             handlerClickCategory={handlerClickCategory}
             selectedCategories={selectedCategories}
           />
-
-          <CategoryItem
-            name="기타"
-            category="ETC"
-            handlerClickCategory={handlerClickCategory}
-            selectedCategories={selectedCategories}
-          />
         </S.CategoryContentWrapper>
 
         {/* 결과 확인 버튼 */}
