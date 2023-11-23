@@ -1,12 +1,24 @@
+.mypageall {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 100px;
+}
+.mypage-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  gap: 60px;
+}
+
 /* 개인정보 수정 */
 .information {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  position: absolute;
-  top: 10%;
-  margin: 0 0 0 -135px;
-  gap: 40px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .twobutton {
@@ -34,19 +46,14 @@
   border-radius: 40px;
 }
 
-.profileimg {
-  text-align: center;
-}
-
 /* 버튼 6개 */
 .buttonl {
-  position: absolute;
-  top: 38%;
+  width: 320px;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  margin: 0 0 0 -156px;
 }
 
 .row1,
@@ -99,11 +106,9 @@
 
 .pointlevel {
   display: flex;
+  position: relative;
   flex-direction: row;
-  align-items: center;
-  position: absolute;
-  top: 76%;
-  margin: 0 0 0 -134px;
+  justify-content: center;
 }
 
 .pointlevelwrap {
