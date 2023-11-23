@@ -1,0 +1,125 @@
+.allcontents {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 80px;
+}
+.editwrap {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 40px;
+}
+.sctype {
+  display: flex;
+  position: relative;
+  font-weight: bold;
+  flex-direction: column;
+  gap: 4px;
+}
+.imgchange {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.profimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.imgchbutton {
+  width: 156px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.2),
+    inset -2px -2px 2px 0 rgba(116, 125, 136, 0.2),
+    -1px -1px 1px 0 rgba(255, 255, 255, 0.2), 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.imgchbutton:hover {
+  background-color: #018c0d;
+  font-weight: bold;
+}
+hr {
+  width: 320px;
+  height: 1px;
+  margin: 0 auto;
+  background: #acacac;
+  border: none;
+  position: relative;
+}
+.nickch {
+  border-top: #acacac;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 12px;
+}
+.nicktextrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.nickbold {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* .nickstore {
+} */
+.nickbutton {
+  width: 64px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.2),
+    inset -2px -2px 2px 0 rgba(116, 125, 136, 0.2),
+    -1px -1px 1px 0 rgba(255, 255, 255, 0.2), 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.nickbutton:hover {
+  background-color: #018c0d;
+  font-weight: bold;
+}
+.nickpatchbox {
+  width: 296px;
+  height: 30px;
+  background-color: #d9d9d9;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 2px;
+  border-width: 0.5px;
+  border-color: #acacac;
+
+  font-family: NotoSansKR_Regular;
+  font-size: 13px;
+  font-weight: 400;
+  &:focus {
+    border: none;
+    outline: 2px solid #018c0d;
+    border-radius: 2px;
+  }
+}
+
+/* .withdraw {
+} */
+.wdbutton {
+  width: 64px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.2),
+    inset -2px -2px 2px 0 rgba(116, 125, 136, 0.2),
+    -1px -1px 1px 0 rgba(255, 255, 255, 0.2), 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.wdbutton:hover {
+  background-color: #018c0d;
+  font-weight: bold;
+}

@@ -1,8 +1,32 @@
-.bookmarktext {
+.listall {
   display: flex;
-  position: absolute;
-  top: 8%;
-  margin: 0 0 0 -176px;
+  position: relative;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.wrap {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cateSel {
+  position: relative;
+  display: flex;
+}
+
+.textrow {
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  gap: 8px;
+}
+.bookmarkCnt {
+  font-size: 12px;
+}
+.liketext {
   font-size: 20px;
   font-weight: bold;
 }
