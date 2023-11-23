@@ -17,7 +17,6 @@ import ProfileEdit from './pages/mypage/ProfileDetail';
 import PointLevel from './pages/mypage/PointLevel';
 import Search from './pages/search/Search';
 import VisitAuth from './pages/visitAuth/VisitAuth';
-import Report from './pages/reportPage/Report';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +25,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Main />,
+        element: <VisitAuth />,
       },
       {
         path: '/map',
@@ -83,14 +82,6 @@ const router = createBrowserRouter([
       {
         path: '/search',
         element: <Search />,
-      },
-      {
-        path: '/event/:id/visit',
-        element: <VisitAuth />,
-      },
-      {
-        path: '/report',
-        element: <Report />,
       },
     ],
   },
